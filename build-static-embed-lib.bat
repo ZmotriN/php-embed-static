@@ -8,3 +8,5 @@ rename Makefile2 Makefile
 
 nmake
 nmake static > NUL
+
+DEVENV %~dp0embeder\embeder.sln /rebuild "Release console|x64"
