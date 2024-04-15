@@ -1,6 +1,6 @@
 @echo off
 
-call configure --disable-all --enable-cli --enable-embed=static
+call configure --disable-all --enable-embed=static
 
 type Makefile Makefile-static > Makefile2
 del Makefile
