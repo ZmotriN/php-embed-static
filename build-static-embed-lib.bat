@@ -1,6 +1,6 @@
 @echo off
 
-call configure --disable-all --enable-cli --enable-embed=static --with-winbinder --with-win32std
+call configure --disable-all --enable-cli --enable-embed=static
 
 type Makefile Makefile-static > Makefile2
 del Makefile
