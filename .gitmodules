@@ -1,6 +1,0 @@
-[submodule "ext/winbinder"]
-	path = ext/winbinder
-	url = https://github.com/crispy-computing-machine/Winbinder-PHP8
-[submodule "ext/win32std"]
-	path = ext/win32std
-	url = https://github.com/crispy-computing-machine/win32std
