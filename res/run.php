@@ -10,5 +10,4 @@
 
 /** Base file for "empty" consoles **/
 
-echo "patate";
-phpinfo();
+include('psab.php');
