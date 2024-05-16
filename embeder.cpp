@@ -64,6 +64,18 @@ static void embeded_ini_defaults(HashTable *configuration_hash)
 
 	ZVAL_NEW_STR(&ini_value, zend_string_init(ZEND_STRL("32767"), 1));
 	zend_hash_str_update(configuration_hash, ZEND_STRL("error_reporting"), &ini_value);
+
+	ZVAL_NEW_STR(&ini_value, zend_string_init(ZEND_STRL("1"), 1));
+	zend_hash_str_update(configuration_hash, ZEND_STRL("winbinder.low_level_functions"), &ini_value);
+
+	ZVAL_NEW_STR(&ini_value, zend_string_init(ZEND_STRL("1"), 1));
+	zend_hash_str_update(configuration_hash, ZEND_STRL("com.allow_dcom"), &ini_value);
+
+	ZVAL_NEW_STR(&ini_value, zend_string_init(ZEND_STRL("1"), 1));
+	zend_hash_str_update(configuration_hash, ZEND_STRL("com.autoregister_typelib"), &ini_value);
+
+	ZVAL_NEW_STR(&ini_value, zend_string_init(ZEND_STRL("UTF-8"), 1));
+	zend_hash_str_update(configuration_hash, ZEND_STRL("iconv.internal_encoding"), &ini_value);
 }
 
 
