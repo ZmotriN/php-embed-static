@@ -85,6 +85,9 @@ static void embeded_ini_defaults(HashTable *configuration_hash)
 
 	ZVAL_NEW_STR(&ini_value, zend_string_init(ZEND_STRL("3072M"), 1));
 	zend_hash_str_update(configuration_hash, ZEND_STRL("memory_limit"), &ini_value);
+
+	ZVAL_NEW_STR(&ini_value, zend_string_init(ZEND_STRL("igbinary"), 1));
+	zend_hash_str_update(configuration_hash, ZEND_STRL("apc.serializer"), &ini_value);
 }
 
 
