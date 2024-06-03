@@ -107,6 +107,8 @@ long main(int argc, char** argv) {
 
 	PHP_EMBED_START_BLOCK(argc, argv);
 
+	zend_register_auto_global(zend_string_init_interned("_CLI", sizeof("_CLI") - 1, 1), 0, NULL);
+	
 	embed_get_module_path(path);
 	embed_register_constant_string("SELF", path);
 	
@@ -174,3 +176,4 @@ static void embed_register_constant_bool(char* name, BOOL val)
 	Z_CONSTANT_FLAGS(et.value) = 0;
 	zend_register_constant(&et);
 }
+
